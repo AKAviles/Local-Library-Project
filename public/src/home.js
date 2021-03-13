@@ -53,11 +53,8 @@ function getMostPopularBooks(books) {
     arr1.push({name: book.title, count: book.borrows.length})
     }
     arr1.sort((countA, countB) => (countA.count > countB.count? -1: 1));
-    arr1.pop();
-    arr1.pop();
-    arr1.pop();
-    arr1.pop();
-    return arr1
+    let arr2 = arr1.slice(0, 5)
+    return arr2
   }
   
  
